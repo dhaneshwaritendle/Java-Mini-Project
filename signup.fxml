@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="500.0" maxWidth="583.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="583.0" spacing="20.0" style="-fx-background-color: #faebd7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signup.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ButtonBar>
+      <buttons>
+         <BorderPane>
+            <center>
+               <AnchorPane>
+                  <children>
+                     <Label layoutX="-76.0" layoutY="-59.0" text="SignUp" textFill="#e37c10">
+                        <font>
+                           <Font name="Cambria Bold" size="22.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </AnchorPane>
+            </center>
+         </BorderPane>
+      </buttons>
+   </ButtonBar>
+   <AnchorPane prefHeight="210.0" prefWidth="360.0">
+      <children>
+         <ImageView fitHeight="350.0" fitWidth="609.0" layoutX="30.0" layoutY="-18.0" pickOnBounds="true" smooth="false">
+            <image>
+               <Image url="@../../../../../../../../Pictures/Saved%20Pictures/patient-bed-hospital-ward-doctor-nurse-provide-medical-care_102902-3127.jpg" />
+            </image>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
+         </ImageView>
+         <Pane cacheShape="false" centerShape="false" layoutX="346.0" layoutY="10.0" opacity="0.95" prefHeight="315.0" prefWidth="261.0" scaleShape="false" style="-fx-background-color: #f3f4f4;">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <children>
+               <PasswordField layoutX="109.0" layoutY="182.0" prefHeight="25.0" prefWidth="149.0" promptText="Confirm Password" />
+               <TextField layoutX="109.0" layoutY="62.0" promptText="Enter Admin ID" />
+               <Button cancelButton="true" layoutX="116.0" layoutY="221.0" mnemonicParsing="false" text="SIGN UP" textFill="#0b0a0b" textOverrun="WORD_ELLIPSIS">
+                  <font>
+                     <Font name="Calibri" size="15.0" />
+                  </font></Button>
+               <TextField layoutX="109.0" layoutY="97.0" prefHeight="25.0" prefWidth="149.0" promptText="Confirm Admin ID" />
+               <PasswordField layoutX="108.0" layoutY="146.0" prefHeight="26.0" prefWidth="149.0" promptText="Set Password" />
+               <Text fill="#09b4b8" layoutX="11.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SET PASSWORD">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Text fill="#18b4b4" fontSmoothingType="LCD" layoutX="6.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER ADMIN ID">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Hyperlink layoutX="98.0" layoutY="263.0" text="Already a user? Sign in" textFill="#202020" />
+            </children>
+         </Pane>
+      </children>
+   </AnchorPane>
+   <AnchorPane />
+</VBox>
