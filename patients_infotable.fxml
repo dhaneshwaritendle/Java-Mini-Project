@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1009.0" styleClass="gradient-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hopeitworks.PatientTableController">
+   <top>
+      <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="214.0" styleClass="shadow" text="Patient's Info">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="58.0" prefWidth="735.0" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="549.0" prefWidth="206.0" styleClass="container" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="212.0" styleClass="container" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../images/person.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="41.0" prefWidth="143.0" styleClass="shadow" stylesheets="">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="218.0" styleClass="line-color" stylesheets="" text="    --------------------------------------" />
+            <VBox prefHeight="419.0" prefWidth="207.0" styleClass="container" stylesheets="@styles.css">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@../../../images/styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/chart_bar.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#onDashboardButtonClick" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@styles.css" text="Dashboard" textFill="#037b7b">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/observation.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#bedinfo" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@styles.css" text="Bed Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="80.0" prefWidth="206.0" styleClass="line-color" stylesheets="@styles.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../images/health_worker_form.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="patient_info" mnemonicParsing="false" prefHeight="35.0" prefWidth="145.0" styleClass="line-color" stylesheets="@styles.css" text="Patient's Info" textFill="#037c7c">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <stylesheets>
+            <URL value="@styles.css" />
+            <URL value="@styles.css" />
+         </stylesheets>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="226.0" spacing="10.0" styleClass="shadow" stylesheets="@../../../images/styles.css" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="226.0" />
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="227.0" prefWidth="219.0" spacing="10.0">
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#enrollpatient" prefHeight="43.0" prefWidth="220.0" styleClass="container" text="Enroll New Patient" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="delete" prefHeight="42.0" prefWidth="183.0" promptText="Enter BED ID to delete " />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDelete" prefHeight="43.0" prefWidth="220.0" styleClass="container" text="Discharge Patient" textFill="#037c7c">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="Alertbox" prefHeight="34.0" prefWidth="219.0" textFill="#0c7b5a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox prefHeight="55.0" prefWidth="226.0" styleClass="container1">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/positive.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="55.0" prefWidth="173.0">
+                     <children>
+                        <Label fx:id="AdmitPatient" prefHeight="35.0" prefWidth="176.0" textFill="#037c7c">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="179.0" text="No.Of Patients Admitted " textFill="#037c7c" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="55.0" prefWidth="226.0" styleClass="container1">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/negative.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="55.0" prefWidth="173.0">
+                     <children>
+                        <Label fx:id="DischargePatient" prefHeight="35.0" prefWidth="176.0" textFill="#037c7c">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="175.0" text="No. Of Patients Discharge " textFill="#037c7c" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="335.0" prefHeight="55.0" prefWidth="226.0" styleClass="container1">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/health_worker_form.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="55.0" prefWidth="173.0">
+                     <children>
+                        <Label fx:id="TotalPatient" prefHeight="35.0" prefWidth="176.0" textFill="#037c7c">
+                           <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="175.0" text="Total Patients" textFill="#037c7c" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="549.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="patientTableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="556.0" styleClass="container1">
+              <columns>
+                <TableColumn fx:id="patientIdTableColumn" prefWidth="75.19996643066406" text="Patient's ID" />
+                  <TableColumn fx:id="patientNameTableColumn" prefWidth="107.20001220703125" text="Patient Name" />
+                  <TableColumn fx:id="bedAssignedTableColumn" prefWidth="104.0" text="Bed Assigned" />
+                  <TableColumn fx:id="roomAssignedTableColumn" minWidth="0.0" prefWidth="100.00006103515625" text="Room Assigned" />
+                  <TableColumn fx:id="admissionDateTableColumn" prefWidth="167.20001220703125" text="Admission Date" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
