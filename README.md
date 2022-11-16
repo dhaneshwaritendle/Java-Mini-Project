@@ -1,4 +1,4 @@
-#Java-Mini-Project
+# Java-Mini-Project
 **Topic : Hospital Bed Management system**
 
 **OBJECTIVE:**
@@ -36,7 +36,7 @@ forced to rely on outdated information or error-prone manual records.
  ![App Screenshot](https://github.com/dhaneshwaritendle/Java-Mini-Project/blob/bc2fb20c76c04e4b276b701cd52a2b9a66639f43/Screenshot_3.png?raw=true)
 ---------------------
 
-#**MEMEBERS**
+# **MEMBERS**
 
 Aryaan sawant 
 githublink:https://github.com/ARYAAN2903
