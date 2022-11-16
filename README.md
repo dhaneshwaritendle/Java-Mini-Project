@@ -14,12 +14,13 @@ forced to rely on outdated information or error-prone manual records.
 
 
 * The hospital bed management is designed for hospital to replace their existing manual system.
-* The new system is to control the following information: patient information, room availability and bed
-visibility. 
+* The new system is to control the following information:
+   *  patient information,
+   *   room availability 
+   *   bed visibility. 
 * These services are provided in graphic user interface in an efficient manner to reduce the
-time and resources currently required for such tasks. 
-* The program can look after inpatients and outpatient’s records, storing patient details into the system. Additionally, central bed management agencies can spend more time communicating with units about the needs of admitted patients, as they no longer need to physically travel to various locations within the hospital to confirm bed
-availability.
+  time and resources currently required for such tasks. 
+
 
 **TECHNOLOGIES USED:**
 * javafx scenebuilder for ui desiging
@@ -27,7 +28,21 @@ availability.
 *  intelliJ Idea  for connectivity.
 
  **UI SCREENSHOTS**
- 
+ --------------------
  ![App Screenshot](https://github.com/dhaneshwaritendle/Java-Mini-Project/blob/bc2fb20c76c04e4b276b701cd52a2b9a66639f43/Screenshot_2.png?raw=true)
+ 
  ![App Screenshot](https://github.com/dhaneshwaritendle/Java-Mini-Project/blob/9524402c87e2daba851a6f1ef3f17c4ef4c187f8/Screenshot_1.png?raw=true)
+ 
  ![App Screenshot](https://github.com/dhaneshwaritendle/Java-Mini-Project/blob/bc2fb20c76c04e4b276b701cd52a2b9a66639f43/Screenshot_3.png?raw=true)
+---------------------
+
+#**MEMEBERS**
+
+Aryaan sawant 
+githublink:https://github.com/ARYAAN2903
+
+Kainaat Zaidi:
+githublink:https://github.com/kainaat0110
+
+Gauri Nevase:
+githublink:https://github.com/GauriNevase
